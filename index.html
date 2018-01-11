@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/manifest.json">
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/STLLoader.js"></script>
+    <script src="./js/OBJLoader.js"></script>
+    <script src="./js/MTLLoader.js"></script>
+    <script src="./js/Tween.js"></script>
+    <script src="./js/TrackballControls.js"></script>
+    <script src="./js/explode.js"></script>
+    <script src="./js/ObjectFactory.js"></script>
+    <script src="./js/app.js"></script>
+    <title>Missile Command by Aditya</title>
+</head>
+
+<body>
+    <div id="gameStart"></div>
+    <!-- The Modal -->
+    <div id="scoreboard" class="hide-score">
+        <div>
+            <h2 id="gameState">
+                Level 1 Cleared!
+            </h2>
+        </div>
+    </div>
+    <div id="menu">
+        <div id="score">
+            <span>Score:</span>
+            <span id="scoreCalc">0</span>
+        </div>
+        <div id="level">
+            <span>Level</span>
+            <span id="levelVal">1</span>
+        </div>
+        <div id="title">
+            <span>Missile Command</span>
+        </div>
+        <div id="health">
+            <span>Health:</span>
+            <span id="healthCalc">11</span>
+        </div>
+        <!--<div class="health-bar" data-total="1000" data-value="1000">
+            <div class="bar">
+                <div class="hit"></div>
+            </div>
+        </div>-->
+    </div>
+    <div id="webgl-container"></div>
+</body>
+
+</html>¯
